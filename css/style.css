@@ -18,7 +18,8 @@ header {
     background-color: black;
     top: 0;
     left: 0;
-    padding: 10px;
+    padding: 5px 10px;
+    margin: 0;
 }
 
 #brand {
@@ -42,4 +43,28 @@ nav {
 nav span a {
     color: seashell;
     padding: 10px;
+}
+
+
+
+#mission {
+    display: flex;
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#banner h2, #banner h4{
+    margin: 10px;
 }
