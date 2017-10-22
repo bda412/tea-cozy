@@ -1,3 +1,4 @@
+/*-----GLOBAL-----*/
 html {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
@@ -5,6 +6,11 @@ html {
     background-color: black;
     opacity: 0.9;
     text-align: center;
+}
+
+.anchor{
+   display: block;
+   visibility:hidden;
 }
 
 
@@ -33,11 +39,6 @@ header {
     height: 50px;
 }
 
-.main {
-    position: relative;
-    top: 70px;
-}
-
 nav {
     padding-right: 10px;
 }
@@ -57,6 +58,8 @@ nav span a {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 70px;
 }
 
 #banner {
@@ -79,6 +82,8 @@ nav span a {
     width: 1000px;
     margin: 50px auto;
     flex-direction: column;
+    position: relative;
+    top: 70px;
 }
 
 #featured h2, #featured h4 {
@@ -107,6 +112,7 @@ nav span a {
     margin: 10px;
 }
 
+
 /*-----LOCATIONS SECTION-----*/
 #locations {
     background: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
@@ -117,11 +123,12 @@ nav span a {
     width: 1200px;
     height: 500px;
     margin: auto;
+    position: relative;
+    top: 70px;
 }
 
 #locations h2 {
     margin: 15px;
-
 }
 
 .location-grid {
@@ -129,16 +136,41 @@ nav span a {
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
 }
 
 .location-grid-item {
     background-color: black;
     margin:  0 20px;
     width: 300px;
-}
-
-.location-grid-item p {
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
     opacity: 1;
 }
+
+.location-grid-item h3 {
+    margin: 15px;
+}
+
+
+/*-----FOOTER-----*/
+footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 70px;
+}
+
+#centered {
+    height: 200px;
+}
+
+#centered h2 {
+    margin-top: 10px;
+}
+
+#copy {
+    display: flex;
+    margin: 40px 20px;
+}
+    
